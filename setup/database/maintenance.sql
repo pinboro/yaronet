@@ -10,6 +10,8 @@ WHERE
 	NOT EXISTS
 	(
 		SELECT 1 FROM account_memo m WHERE m.user = u.id UNION ALL
+--		SELECT 1 FROM blogs b WHERE b.proprio = u.id UNION ALL
+--		SELECT 1 FROM blogs_items i WHERE i.posteur = u.id UNION ALL
 		SELECT 1 FROM board_favorite f WHERE f.profile = u.id UNION ALL
 		SELECT 1 FROM board_permission_forum pf WHERE pf.profile = u.id UNION ALL
 		SELECT 1 FROM board_permission_section ps WHERE ps.profile = u.id UNION ALL

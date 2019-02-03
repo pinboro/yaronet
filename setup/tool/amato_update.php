@@ -142,6 +142,34 @@ $entities = array(
 //    array('account_message', array('id'), '', markup_update_fields('id', array('text'))),
 //    array('account_user', array('id'), '', function (&$row, &$lines) {
 //    }),
+//    array('blogs', array('id'), '', function (&$row, &$lines) {
+//        foreach (array('nom', 'edito', 'colonne', 'css', 'lcss', 'disp') as $key) {
+//            $row[$key] = html_entity_decode($row[$key], ENT_COMPAT, 'UTF-8');
+//        }
+
+//        return true;
+//    }),
+//    array('blogs_cat', array('blog', 'id'), '', function (&$row, &$lines) {
+//        foreach (array('libelle') as $key) {
+//            $row[$key] = html_entity_decode($row[$key], ENT_COMPAT, 'UTF-8');
+//        }
+
+//        return true;
+//    }),
+//    array('blogs_comments', array('blog', 'num', 'id'), '', function (&$row, &$lines) {
+//        foreach (array('msg') as $key) {
+//            $row[$key] = html_entity_decode($row[$key], ENT_COMPAT, 'UTF-8');
+//        }
+
+//        return true;
+//    }),
+//    array('blogs_items', array('blog', 'num'), '', function (&$row, &$lines) {
+//        foreach (array('titre', 'texte') as $key) {
+//            $row[$key] = html_entity_decode($row[$key], ENT_COMPAT, 'UTF-8');
+//        }
+
+//        return true;
+//    }),
 //    array('board_block', array('forum', 'rank'), '', markup_update_fields('forum', array('text'))),
 //    array('board_forum', array('id'), '', markup_update_fields('id', array('header', 'preface'))),
 //    array('board_post', array('id'), '', markup_update_fields('id', array('text'))),
